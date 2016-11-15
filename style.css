@@ -1,0 +1,15 @@
+/* hide an node preserving the space */
+.hide {
+    visibility: hidden;
+}
+
+/* display a structure of divs as a table */
+.table {
+    display: table;
+}
+.table>div {
+    display: table-row;
+}
+.table>div>div {
+    display: table-cell;
+}
