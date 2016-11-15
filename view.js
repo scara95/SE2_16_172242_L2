@@ -42,3 +42,13 @@ function clearInput() {
     document.getElementById("thing").value = "";
     document.getElementById("quantity").value = "";
 }
+
+//display an alert
+function showLimitAlert() {
+    alert("Attenzione! Hai superato il limite impostato.");
+}
+
+//render the limit from model
+function renderLimit(model) {
+    document.getElementById("max-current").innerText = model.getLimit().toString();
+}

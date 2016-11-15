@@ -7,6 +7,21 @@
         <link type="text/css" rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <div class="table">
+            <div>
+                <div>Massimo corrente:</div>
+                <div id="max-current"></div>
+            </div>
+            <div>
+                <div>Nuovo massimo:</div>
+                <div><input type="number" id="max-elements"/></div>
+            </div>
+            <div>
+                <div></div>
+                <div><button id="max-set">Imposta</button></div>
+            </div>
+        </div>
+
         <button id="add-button">Ordina</button>
         <div id="adder" class="hide table">
             <div>
@@ -23,10 +38,6 @@
             </div>
         </div>
         <table id="table">
-            <tr>
-                <th>Object</th>
-                <th>Quantity</th>
-            </tr>
         </table>
         <script src="model.js"></script>
         <script src="view.js"></script>
