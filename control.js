@@ -17,6 +17,7 @@ document.getElementById("add-button").onclick = function () {
 document.getElementById("add-thing").onclick = function () {
     var thing = document.getElementById("thing").value;
     var quantity = parseInt(document.getElementById("quantity").value);
+    if(thing == "" || isNaN(quantity)) return;
     model.add(thing, quantity);
     renderTable(model);
     hideAdder();
