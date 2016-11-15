@@ -15,7 +15,7 @@ function renderTable(model) {
     table_h.appendChild(quantity_h);
     table.appendChild(table_h);
     //trasverse model data and insert rows
-    for(var thing in model.data) {
+    for(var thing in model.getElementsMap()) {
         var object = document.createElement("td");
         object.innerText = thing;
         var quantity = document.createElement("td");

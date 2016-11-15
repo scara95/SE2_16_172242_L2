@@ -32,4 +32,9 @@ function Model(limit) {
     this.getLimit = function() {
         return this.limit;
     };
+
+    //return data
+    this.getElementsMap = function() {
+        return this.data;
+    }
 }
